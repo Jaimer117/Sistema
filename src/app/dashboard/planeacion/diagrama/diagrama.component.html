@@ -1,0 +1,24 @@
+
+
+
+
+  <ejs-gantt id="ganttDefault" #splittasks height="450px" [dataSource]="dat" [taskFields]="taskSettings" [treeColumnIndex]="1"
+      [editSettings]="editSettings"  [columns]="columns"  #defaultCheck id="checkbox"  
+      [allowSelection]="true" [enableContextMenu]="true"  [highlightWeekends]="true" 
+      [toolbar]="toolbar"  >
+      
+  </ejs-gantt>
+
+
+
+<div class="col-lg-9 control-section dropdowntree-check sb-property-border">
+  <div class="content-wrapper" style="height: 350px">
+      <div style="margin: 0px auto; width:250px; padding-top: 40px;">
+          <ejs-dropdowntree #defaultCheck id="checkbox" [fields]='field' [showCheckBox]='showCheckBox' [mode]='mode'
+              popupHeight='230px' placeholder=' Personal, Materiales'
+              ></ejs-dropdowntree>
+      </div>
+  </div>
+</div>
+
+

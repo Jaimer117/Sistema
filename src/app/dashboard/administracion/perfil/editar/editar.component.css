@@ -1,0 +1,19 @@
+.contenido-componente {
+    padding: 20px;
+    margin-left: 60px;
+    display: flex;
+ 
+ 
+   
+  }
+  .contenido-general {
+    margin: 0;
+    padding: 10px;
+    width: 740px;
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.mat-form-field {
+    width: 700px;
+}

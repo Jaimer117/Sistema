@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  animation: fadeIn;
+  animation-duration: 0.5s;
+}
+
+th,
+td {
+  min-height: 150px;
+  text-align: center;
+  padding: 8px;
+  width: 1000px;
+}
+
+.btn-agregar {
+  margin-bottom: 10px;
+  float: right;
+  width: 100px;
+}
+
+.data:hover {
+  background-color: #e6eed6;
+  cursor: pointer;
+  color: #568ec7;
+}
+
+thead {
+  background-color: #638475;
+  color: white;
+}

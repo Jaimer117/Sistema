@@ -1,0 +1,102 @@
+.barra-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  float: left;
+}
+
+h1.barra-app-name {
+  color: white;
+  margin-left: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: bounceIn infinite;
+  animation-duration: 15s;
+}
+
+.barra-sidenav-container {
+  flex: 1;
+}
+
+.mat-toolbar {
+  background-color: #011627;
+  color: white;
+  box-shadow: rgba(114, 108, 108, 0.4) 0px 0px 0px 2px, rgba(12, 12, 12, 0.65) 0px 4px 6px -1px, rgba(145, 138, 138, 0.08) 0px 1px 0px inset;
+  position: fixed;
+  z-index: 2;
+}
+.sys-spacer {
+  flex: 1 1 auto;
+}
+.align-perm{
+  border-radius: 50%;
+}
+
+
+.mat-sidenav {
+  width: 200px;
+  background: #ba2028;
+  padding-top: 5px;
+  text-align: center;
+  border: 0;
+  margin-left: 60px;
+}
+
+.mat-icon {
+  color: white;
+}
+
+.opcion-color {
+  color: white;
+  animation: backInLeft;
+  animation-duration: 0.6s;
+}
+
+.menu-icons{
+  text-align: center;
+  width: 60px;
+  height: 100%;
+  background: #ba2028;
+  position: fixed;
+  z-index: 300;
+  overflow: hidden;
+}
+
+.imagen-logo {
+  width: 100px;
+  height: 50px;
+  animation: zoomIn;
+  animation-duration: 0.6s;
+}
+
+.top-nav {
+  margin-bottom: 14px;
+}
+
+.mat-nav-list {
+  overflow: hidden;
+}
+
+.todo-contenido {
+  margin-top: 60px;
+}
+
+.mat-sidenav-content {
+  background-color: #ebebeb;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  background-color: #1b1a1a;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.color-black {
+  color: black;
+}

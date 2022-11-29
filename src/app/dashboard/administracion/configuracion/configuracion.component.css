@@ -1,0 +1,43 @@
+
+  .contenido-componente {
+    padding: 20px;
+    margin-left: 60px;
+  }
+  
+  .align-btn {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+   
+  }
+  .example-form {
+    height: 10px;
+   
+  }
+  
+  .custom-tooltip-primary {
+    background: #4b88b9;
+  }
+  
+  .custom-tooltip-warning {
+    background: #FCA364;
+  }
+  
+  .custom-tooltip-basic {
+    background: #5e5e5e;
+  }
+  
+  
+  .custom-tooltip-delete {
+    background: #BA2028;
+  }
+  
+  .contenido-componente {
+      margin-left: 60px;
+      padding: 20px;
+    
+  }
+  .example-full-width {
+    font-size: small;
+    width: 70px;
+  }

@@ -1,0 +1,42 @@
+.align-sel {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contenido-componente {
+  margin: 0;
+}
+
+.example-form2 {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-card2 {
+  max-width: 400px;
+}
+
+.card-button-actions {
+  justify-content: center;
+}
+
+.example-full-width2 {
+  width: 100%;
+}
+
+.example-form {
+  height: 10px;
+  display: inline;
+}
+
+.example-full-width {
+  height: 10px;
+  width: 90px;
+}
+
+.align-contenido {
+  display: flex;
+  justify-content: space-between;
+}

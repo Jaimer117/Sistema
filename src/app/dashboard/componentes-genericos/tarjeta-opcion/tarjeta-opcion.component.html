@@ -1,0 +1,16 @@
+<div class="contenido-componente">
+    <div *ngFor="let nivelUno of data.objeto">
+        <div *ngFor="let nivelDos of nivelUno.permisos">
+            <ng-container *ngIf="nivelDos.permiso == permiso"><!--Filtro solo el submenu de este componente-->
+                <button class="btn-primary btn-opcion" *ngFor="let opcion of nivelDos.submenu">
+                    <div [routerLink]="opcion.url">
+                        <mat-icon>{{opcion.icono}}</mat-icon>
+                        <br>
+                        <h3>{{opcion.nombre}}</h3>
+                        {{opcion.descripcion}}
+                    </div>
+                </button>
+            </ng-container>
+        </div>
+    </div>
+</div>

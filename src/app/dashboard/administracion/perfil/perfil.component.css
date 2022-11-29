@@ -1,0 +1,18 @@
+.contenido-componente {
+  padding: 20px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.example-card {
+width: 60vh;
+
+}
+
+.example-header-image {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJUeQCIV5gK-gudX5l3OIhRcmgnbtGDhExw&usqp=CAU');
+  background-size: cover;
+}

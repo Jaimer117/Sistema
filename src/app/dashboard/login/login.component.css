@@ -1,0 +1,52 @@
+.body {
+    display: flex;
+    justify-content: center;
+    height: 13cm;
+    width: 90%;
+    position: relative;
+    left: 100px;
+    bottom: 15px;
+    border-radius:5px;
+    top: 200px;
+    align-items: center;
+    font-family: Lato,sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    min-height: 100vh;
+} 
+
+.login{  
+    max-width: 380px;
+    text-align: center;
+    background: rgb(229, 4, 4);
+    border-color: aliceblue;
+    border-radius:15px;
+    bottom: 2cm;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.ancho{
+    width: 80%;
+    background: aliceblue;
+    position: relative;
+    border-radius:5px;
+}
+.button{
+    height: 50px;
+    background-color: #ca6868;
+    width: 85%;
+    bottom: 40px;
+    border-radius:5px;
+    
+    
+}
+.spinner{
+    margin: 0 auto;
+    background-color: #ffffff;
+    
+}
+.imagen{
+    border-radius: 10px;
+}

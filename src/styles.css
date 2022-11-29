@@ -1,0 +1,176 @@
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-treegrid/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-gantt/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-basic {
+    background-color: #757780;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-white {
+    background-color: #EBEBEB;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary {
+    background-color: #4381C1;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-secondary {
+    background-color: #635380;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-warning {
+    background-color: #FF9B54;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-danger {
+    background-color: #BA2028;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: color 150ms;
+    vertical-align: baseline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-basic:hover,
+.btn-basic:focus,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-danger:hover,
+.btn-danger:hover {
+    opacity: 90%;
+    cursor: pointer;
+    animation: pulse;
+    animation-duration: 0.7s;
+}
+
+.btn-primary:active,
+.btn-basic:active,
+.btn-secondary:active,
+.btn-warning:active,
+.btn-danger:active {
+    background: #dadada;
+    color: gray;
+}
+
+.btn-primary:disabled,
+.btn-basic:disabled,
+.btn-secondary:disabled,
+.btn-warning:disabled,
+.btn-danger:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+.cabecera-pagina {
+    text-align: center;
+    justify-content: center;
+    background-color: #404E5C;
+    color: white;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.h2-cabecera {
+    padding-bottom: 8px;
+}
+
+

@@ -1,0 +1,33 @@
+<div class="contenido-componente">
+  <table>
+    <thead>
+      <tr>
+        <th *ngFor="let item of titulos">
+          <h2>{{ item }}</h2>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let nivelUno of data  | paginacion:page_size:page_number">
+        <ng-container
+          *ngFor="let nivelDos of nivelUno | keyvalue: originalOrder"
+        >
+          <ng-container *ngIf="nivelDos.key == id">
+            <tr class="data" (click)="detalle(nivelDos.value)">
+              <td *ngFor="let item of nivelUno | keyvalue: originalOrder">
+                {{ item.value }}
+               
+              </td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<mat-paginator [length]="data.length"
+              [pageSize]="page_size"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Seleccionar pagina"
+           (page)="SeleccionarPagina($event)">
+</mat-paginator>

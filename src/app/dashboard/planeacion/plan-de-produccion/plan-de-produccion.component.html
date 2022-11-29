@@ -1,0 +1,58 @@
+<div class="contenido-componente">
+  <div class="cabecera-pagina">
+    <h2 class="h2-cabecera">Plan de Produccion</h2>
+  </div>
+  <mat-card>
+   
+      <form class="example-form">
+
+          <mat-label>Filtrar:</mat-label>
+         
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Id</mat-label>
+            <input type="number" [(ngModel)]="idfiltro" [ngModelOptions]="{standalone: true}" matInput placeholder="1">
+
+          </mat-form-field>&nbsp;  
+          <mat-form-field appearance="fill">
+            <mat-label>Rango de Fecha </mat-label>
+          <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+            <input matStartDate formControlName="start" placeholder="Feha Inicio">
+            <input matEndDate formControlName="end" placeholder="Fecha Fin" >
+          </mat-date-range-input>
+          <mat-hint>Mes/Dia/anio –Mes/Dia/anio</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+          
+        </mat-form-field>&nbsp; 
+        
+      <button class="btn-basic"  matTooltip="Buscar"
+       matTooltipPosition="above" matTooltipClass="custom-tooltip-basic"  (click)="Filtro()">
+       <mat-icon>search</mat-icon>
+      </button>&nbsp; 
+      <button class="btn-danger"  matTooltip="Cancelar"
+      matTooltipPosition="above" matTooltipClass="custom-tooltip-delete"  (click)="cancelarFiltro()">
+       <mat-icon>cancel</mat-icon>
+     </button>&nbsp; 
+    </form>
+    <div class="align-btn">
+      <button class="btn-warning" matTooltip="Editar" 
+      matTooltipPosition="above" matTooltipClass="custom-tooltip-warning"
+       [disabled]="deshabilitar" (click)="openedit()" >
+        <mat-icon>edit</mat-icon>
+      </button>&nbsp; 
+
+      <button class="btn-danger"  matTooltip="Eliminar"
+       matTooltipPosition="above"   matTooltipClass="custom-tooltip-delete"
+       [disabled]="deshabilitar"  (click)="Eliminar()">
+        <mat-icon>delete</mat-icon>
+      </button>&nbsp; 
+      
+      <button class="btn-primary"matTooltip="Agregar" matTooltipPosition="above"  
+      matTooltipClass="ustom-tooltip-primary"      (click)="openDialog()">
+       <mat-icon>add</mat-icon> </button>
+   
+   
+    </div>&nbsp;
+    <app-tabla  [titulos]="titulos" [data]="this.planeacionservice.data" [id]="'id'"[accionsbutonact]="true" (enviarItem)="actionbutton($event)">
+    </app-tabla>
+ </mat-card>

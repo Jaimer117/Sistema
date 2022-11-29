@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+  }
+  
+  .contenido-componente {
+    margin-left: 60px;
+    padding: 20px;
+  }
+  
+  .card-principal {
+    background-color: #EBEBEB;
+    border-color: none;
+  }
+  
+  .align-btn {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: right;
+  }
+  
+  
+  .custom-tooltip-primary {
+    background: #4b88b9;
+  }
+  
+  .custom-tooltip-warning {
+    background: #FCA364;
+  }
+  
+  .custom-tooltip-basic {
+    background: #5e5e5e;
+  }
+  
+
+  .custom-tooltip-delete {
+    background: #BA2028;
+  
+    margin-bottom: 10px;
+    justify-content: right;}

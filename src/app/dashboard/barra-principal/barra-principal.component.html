@@ -1,0 +1,71 @@
+<div class="menu-icons" id="menu_side">
+  <mat-nav-list>
+    <button mat-list-item class="top-nav" (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div *ngFor="let nav of fillerNav.objeto">
+      <button
+        mat-list-item
+        *ngFor="let nav of nav.permisos"
+        [routerLink]="nav.ruta"
+      >
+        <mat-icon>{{ nav.icono }}</mat-icon>
+      </button>
+    </div>
+
+    <div class="bottom-nav">
+      <button mat-list-item [matMenuTriggerFor]="opcionesPerfil">
+        <mat-icon>person</mat-icon>
+      </button>
+    </div>
+  </mat-nav-list>
+</div>
+<div class="barra-container">
+  <mat-sidenav-container class="barra-sidenav-container">
+    <mat-sidenav #snav mode="side">
+      <mat-nav-list>
+     
+        <div *ngFor="let nav of fillerNav.objeto">
+          <button
+            class="opcion-color"
+            mat-list-item
+            *ngFor="let nav of nav.permisos"
+            [routerLink]="nav.ruta"
+          >
+            {{ nav.permiso }}
+          </button>
+        </div>
+        
+    
+     <div class="bottom-nav">
+      <button
+      mat-list-item
+      [matMenuTriggerFor]="opcionesPerfil"
+      class="opcion-color"
+    >
+      Perfiles
+    </button>
+       </div>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="sysdigital">
+        <h1 class="barra-app-name">SysDigital</h1>
+      </mat-toolbar>
+
+      <div class="todo-contenido">
+        <mat-menu #opcionesPerfil="matMenu">
+         <!-- <button mat-menu-item>
+            <mat-icon class="color-black">supervisor_account</mat-icon>
+            <span>Perfil</span>
+          </button>-->
+          <button mat-menu-item routerLink="/login">
+            <mat-icon class="color-black">logout</mat-icon>
+            <span>Cerrar Sesión</span>
+          </button>
+        </mat-menu>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

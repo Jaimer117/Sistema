@@ -1,0 +1,55 @@
+<div class="contenido-componente">
+
+  <div class="cabecera-pagina">
+    <h2 class="h2-cabecera">Empleados</h2>
+  </div>
+
+  <mat-card>
+    <form class="example-form">
+        
+  
+      <mat-label>Filtrar:</mat-label>
+     
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Id</mat-label>
+        <input type="number" matInput placeholder="1">
+
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Año</mat-label>
+        <input type="number" matInput placeholder="2022">
+
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Semana</mat-label>
+        <input type="text" matInput placeholder="30">
+      </mat-form-field>
+      &nbsp;
+ 
+  <button class="btn-basic"  matTooltip="Buscar"
+   matTooltipPosition="above" matTooltipClass="custom-tooltip-basic">
+    <mat-icon>search</mat-icon>
+  </button>&nbsp; 
+</form>
+
+
+      <div class="align-btn">
+      <button class="btn-warning" matTooltip="Editar" matTooltipPosition="above" matTooltipClass="custom-tooltip-warning"[disabled]="deshabilitar" (click)="openedit()" >
+        <mat-icon>edit</mat-icon>
+      </button>&nbsp; 
+      <button class="btn-danger"  matTooltip="Eliminar" matTooltipPosition="above"   matTooltipClass="custom-tooltip-delete" [disabled]="deshabilitar" >
+        <mat-icon>delete</mat-icon>
+      </button>&nbsp; 
+
+      <button class="btn-primary" (click)="openDialog()" matTooltip="Agregar" matTooltipPosition="above"
+      matTooltipClass="custom-tooltip-primary">
+      <mat-icon>add</mat-icon>
+    </button>
+    
+    </div>
+    <app-tabla [titulos]="titulos" [data]="data" [id]="'id'" [accionsbutonact]="true" (enviarItem)="actionbutton($event)">
+    </app-tabla>
+  </mat-card>
+  &nbsp;
+
+</div>

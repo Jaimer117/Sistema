@@ -1,0 +1,53 @@
+<div class="contenido-componente">
+    <div class="contenido-general">
+        <mat-card>
+            <mat-card-title>Perfil</mat-card-title>
+            <form class="example-form2" [formGroup]="NuevoUsuario" (ngSubmit)="recibeCrearNuevo()">
+            <mat-card-content>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Usuario</mat-label>
+                        <input matInput placeholder="Usuario" formControlName="nuevousuario">
+                        <mat-icon matSuffix>person</mat-icon>
+                        <mat-hint>Solo numeros y letras</mat-hint>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nuevo Usuario</mat-label>
+                        <input matInput placeholder="Nuevo Usuario" formControlName="usuario">
+                        <mat-icon matSuffix>person</mat-icon>
+                        <mat-hint>Solo numeros y letras</mat-hint>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nueva Contrasena</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'"  formControlName="contrasena">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Repite la Contrasena Nueva</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="nuevacontrasena">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="card-button-actions">
+                <button mat-button (click)="cancelar()">CANCELAR</button>
+                <button class="btn-primary example-full-width" style="height: 40px;" type="submit" matTooltip="Agregar nuevo" matTooltipPosition="above" [disabled]="NuevoUsuario.invalid"  (click)="agregar()">
+                  AGREGAR
+                </button>
+            
+             </mat-card-actions>
+            </form>
+        </mat-card>
+    
+    </div>
+    </div>
